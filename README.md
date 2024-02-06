@@ -32,7 +32,11 @@ Make sure you have the following tools installed on your machine:
 
    This command will download the required Docker images, build the necessary containers, and start the services in detached mode.
 
-4. Run migrations and seed the database:
+4. Run this command to installing laravel app
+    ```bash
+    docker compose run --rm composer create-project laravel/laravel .
+    ```
+5. Run migrations and seed the database:
 
    ```bash
    docker compose run artisan migrate
@@ -40,7 +44,7 @@ Make sure you have the following tools installed on your machine:
 
    This will set up the database tables and seed initial data.
 
-5. Access your Laravel application in the browser:
+6. Access your Laravel application in the browser:
 
    Open your web browser and navigate to [http://localhost:8000](http://localhost:8000).
 
