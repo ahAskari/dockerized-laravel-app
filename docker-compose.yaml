@@ -21,8 +21,6 @@ services:
       dockerfile: dockerfiles/php.dockerfile
     volumes:
       - ./src:/var/www/html
-    tty: true
-
 
   mysql:
     container_name: mysql
@@ -45,11 +43,4 @@ services:
       dockerfile: dockerfiles/php.dockerfile
     volumes:
       - ./src:/var/www/html
-    entrypoint: ["php", "/var/www/html/artisan"]
-
-  npm:
-   image: node:alpine3.19
-   working_dir: /var/www/html
-   entrypoint: ["npm"]
-   volumes:
-     - ./src:/var/www/html
+    entrypoint: ['php', '/var/www/html/artisan']
