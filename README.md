@@ -1,7 +1,3 @@
-Certainly! Below is a sample README file for your Dockerized Laravel app with Nginx web server and MySQL database. Please customize it based on your specific configurations and requirements:
-
----
-
 # Dockerized Laravel App with Nginx and MySQL
 
 This repository contains a Dockerized Laravel application with Nginx as the web server and MySQL as the database. It allows you to easily set up and run your Laravel application in a containerized environment.
